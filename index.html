@@ -3,101 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سایت شخصی و حرفه‌ای من</title>
-  <meta name="description" content="یک سایت فارسی مدرن و قابل توسعه برای معرفی، خدمات و ارتباط." />
+  <title>سایت من</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <h1 class="logo">برند من</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">خانه</a></li>
-          <li><a href="#about">درباره من</a></li>
-          <li><a href="#services">خدمات</a></li>
-          <li><a href="#contact">تماس</a></li>
-        </ul>
-      </nav>
+  <!-- هدر -->
+  <header class="hero">
+    <nav class="navbar container">
+      <h1 class="logo">سایت من</h1>
+      <ul class="nav-links">
+        <li><a href="#about">درباره من</a></li>
+
+        <!-- منوی کشویی خدمات -->
+        <li class="dropdown">
+          <a href="#services">خدمات ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="web-design.html">طراحی سایت</a></li>
+            <li><a href="digital-consulting.html">مشاوره دیجیتال</a></li>
+            <li><a href="future-development.html">توسعه آینده</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">تماس</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <h2>طراحی سایت و خدمات دیجیتال</h2>
+      <p>یک وب‌سایت حرفه‌ای، سریع و قابل توسعه برای معرفی خدمات شما</p>
+      <a class="btn" href="#services">مشاهده خدمات</a>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h2>یک شروع حرفه‌ای برای حضور آنلاین</h2>
-        <p>
-          این سایت به عنوان نسخه اولیه برند شخصی/حرفه‌ای طراحی شده و بعداً
-          می‌تواند به سایت خدماتی، شرکتی، آموزشی یا فروشگاهی توسعه پیدا کند.
-        </p>
-        <a class="btn" href="#contact">شروع همکاری</a>
-      </div>
-    </section>
+  <!-- درباره -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3>درباره ما</h3>
+      <p>
+        ما خدمات طراحی سایت، مشاوره دیجیتال و توسعه امکانات آینده را ارائه می‌دهیم.
+      </p>
+    </div>
+  </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h3>درباره من</h3>
-        <p>
-          این بخش برای معرفی تو یا برندت است. فعلاً می‌توانیم متن عمومی بگذاریم
-          و بعداً آن را با اطلاعات واقعی، رزومه، تجربه‌ها و اهداف کسب‌وکارت تکمیل کنیم.
-        </p>
-      </div>
-    </section>
+  <!-- خدمات اسکرولی -->
+  <section id="services" class="section alt">
+    <div class="container">
+      <h3>خدمات ما</h3>
 
-<!-- بخش خدمات به‌روزرسانی شده -->
-<section id="services" class="section alt">
-  <div class="container">
-    <h3>خدمات</h3>
-    <div class="cards">
-      <!-- کارت طراحی سایت که حالا قابل کلیک است -->
-      <div class="card clickable" id="web-design-card">
-        <h4>طراحی سایت</h4>
-        <p>طراحی صفحات مدرن، واکنش‌گرا و قابل توسعه.</p>
-        <small>(برای اطلاعات بیشتر کلیک کنید)</small>
-      </div>
-      
-      <div class="card">
-        <h4>مشاوره دیجیتال</h4>
-        <p>کمک برای شروع حضور حرفه‌ای در فضای آنلاین.</p>
-      </div>
-      
-      <div class="card">
-        <h4>توسعه آینده</h4>
-        <p>امکان اضافه‌کردن وبلاگ، فرم‌ها، پنل و امکانات بیشتر.</p>
+      <div class="services-slider-wrapper">
+        <button class="slider-btn" id="prevBtn">❯</button>
+
+        <div class="services-slider" id="servicesSlider">
+          <a class="service-card" href="web-design.html">
+            <h4>طراحی سایت</h4>
+            <p>طراحی صفحات مدرن، واکنش‌گرا و قابل توسعه.</p>
+          </a>
+
+          <a class="service-card" href="digital-consulting.html">
+            <h4>مشاوره دیجیتال</h4>
+            <p>کمک برای شروع حضور حرفه‌ای در فضای آنلاین.</p>
+          </a>
+
+          <a class="service-card" href="future-development.html">
+            <h4>توسعه آینده</h4>
+            <p>امکان اضافه‌کردن فرم، پنل، وبلاگ و امکانات بیشتر.</p>
+          </a>
+        </div>
+
+        <button class="slider-btn" id="nextBtn">❮</button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ساختار پاپ‌آپ (Modal) که در حالت عادی مخفی است -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3 style="margin-bottom: 15px; color: #1d4ed8;">جزئیات طراحی سایت</h3>
-    <p id="modal-text" style="text-align: justify; line-height: 1.8;"></p>
-  </div>
-</div>
-
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h3>تماس با من</h3>
-        <p>برای شروع همکاری یا ارتباط، از راه‌های زیر استفاده کن.</p>
-        <div class="contact-box">
-          <p>ایمیل: yourmail@example.com</p>
-          <p>اینستاگرام/تلگرام: yourbrand</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <!-- تماس -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h3>تماس با ما</h3>
+      <p>برای همکاری و مشاوره با ما در ارتباط باشید.</p>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 تمامی حقوق محفوظ است.</p>
+      <p>© تمامی حقوق محفوظ است</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
