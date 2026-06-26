@@ -44,25 +44,40 @@
       </div>
     </section>
 
-    <section id="services" class="section alt">
-      <div class="container">
-        <h3>خدمات</h3>
-        <div class="cards">
-          <div class="card">
-            <h4>طراحی سایت</h4>
-            <p>طراحی صفحات مدرن، واکنش‌گرا و قابل توسعه.</p>
-          </div>
-          <div class="card">
-            <h4>مشاوره دیجیتال</h4>
-            <p>کمک برای شروع حضور حرفه‌ای در فضای آنلاین.</p>
-          </div>
-          <div class="card">
-            <h4>توسعه آینده</h4>
-            <p>امکان اضافه‌کردن وبلاگ، فرم‌ها، پنل و امکانات بیشتر.</p>
-          </div>
-        </div>
+<!-- بخش خدمات به‌روزرسانی شده -->
+<section id="services" class="section alt">
+  <div class="container">
+    <h3>خدمات</h3>
+    <div class="cards">
+      <!-- کارت طراحی سایت که حالا قابل کلیک است -->
+      <div class="card clickable" id="web-design-card">
+        <h4>طراحی سایت</h4>
+        <p>طراحی صفحات مدرن، واکنش‌گرا و قابل توسعه.</p>
+        <small>(برای اطلاعات بیشتر کلیک کنید)</small>
       </div>
-    </section>
+      
+      <div class="card">
+        <h4>مشاوره دیجیتال</h4>
+        <p>کمک برای شروع حضور حرفه‌ای در فضای آنلاین.</p>
+      </div>
+      
+      <div class="card">
+        <h4>توسعه آینده</h4>
+        <p>امکان اضافه‌کردن وبلاگ، فرم‌ها، پنل و امکانات بیشتر.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ساختار پاپ‌آپ (Modal) که در حالت عادی مخفی است -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 style="margin-bottom: 15px; color: #1d4ed8;">جزئیات طراحی سایت</h3>
+    <p id="modal-text" style="text-align: justify; line-height: 1.8;"></p>
+  </div>
+</div>
+
 
     <section id="contact" class="section">
       <div class="container">
