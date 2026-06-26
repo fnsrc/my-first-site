@@ -3,163 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaWeb | طراحی سایت حرفه‌ای</title>
+  <title>Nova Studio | طراحی سایت حرفه‌ای</title>
+
+  <!-- فونت فارسی حرفه‌ای -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background Effects -->
-  <div class="bg-blur blur-1"></div>
-  <div class="bg-blur blur-2"></div>
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
 
   <!-- Header -->
   <header class="header">
-    <div class="container nav">
-      <div class="logo">NovaWeb</div>
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        Nova Studio
+      </a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#hero">خانه</a></li>
-          <li><a href="#services">خدمات</a></li>
-          <li><a href="#portfolio">نمونه‌کارها</a></li>
-          <li><a href="#about">درباره ما</a></li>
-          <li><a href="#contact">تماس</a></li>
-        </ul>
+      <nav class="nav" id="navMenu">
+        <a href="#hero">خانه</a>
+        <a href="#services">خدمات</a>
+        <a href="#portfolio">نمونه‌کارها</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس</a>
       </nav>
 
-      <a href="#contact" class="nav-btn">مشاوره رایگان</a>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary desktop-btn">شروع پروژه</a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <span class="mini-badge">طراحی سایت مدرن و حرفه‌ای</span>
+    <div class="container hero-wrapper">
+      <div class="hero-text">
+        <span class="badge">طراحی سایت مدرن، سریع و حرفه‌ای</span>
 
         <h1>
-          سایتت فقط نباید زیبا باشد،
-          باید <span>اعتماد بسازد</span>
-          و <span>مشتری جذب کند</span>
+          وب‌سایتی بساز که فقط
+          <span>زیبا</span> نباشد،
+          بلکه برایت
+          <span>اعتماد و مشتری</span>
+          ایجاد کند
         </h1>
 
         <p>
-          طراحی سایت شرکتی، فروشگاهی و اختصاصی با ظاهر حرفه‌ای،
-          تجربه کاربری مدرن و ساختاری که برای رشد واقعی کسب‌وکار شما طراحی شده است.
+          طراحی سایت شرکتی، فروشگاهی و اختصاصی با استانداردهای مدرن،
+          تجربه کاربری حرفه‌ای و ظاهری که برند شما را قدرتمند نشان می‌دهد.
         </p>
 
-        <div class="hero-actions">
+        <div class="hero-buttons">
           <a href="#services" class="btn btn-primary">مشاهده خدمات</a>
-          <a href="#portfolio" class="btn btn-secondary">نمونه‌کارها</a>
+          <a href="#portfolio" class="btn btn-secondary">دیدن نمونه‌کار</a>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat">
-            <h3>150+</h3>
-            <p>پروژه موفق</p>
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong>150+</strong>
+            <span>پروژه موفق</span>
           </div>
-          <div class="stat">
-            <h3>98%</h3>
-            <p>رضایت مشتری</p>
+          <div class="metric">
+            <strong>98%</strong>
+            <span>رضایت مشتری</span>
           </div>
-          <div class="stat">
-            <h3>5 سال</h3>
-            <p>تجربه کاری</p>
+          <div class="metric">
+            <strong>5 سال</strong>
+            <span>تجربه اجرا</span>
           </div>
         </div>
       </div>
 
       <div class="hero-visual">
-        <div class="glass-card main-card">
-          <div class="window-top">
+        <div class="ui-card">
+          <div class="ui-topbar">
             <span></span><span></span><span></span>
           </div>
 
-          <div class="window-body">
-            <div class="dashboard-box big"></div>
+          <div class="ui-content">
+            <div class="ui-sidebar"></div>
 
-            <div class="dashboard-row">
-              <div class="dashboard-box"></div>
-              <div class="dashboard-box"></div>
+            <div class="ui-main">
+              <div class="ui-banner"></div>
+
+              <div class="ui-stats">
+                <div class="ui-mini-card"></div>
+                <div class="ui-mini-card"></div>
+                <div class="ui-mini-card"></div>
+              </div>
+
+              <div class="ui-chart"></div>
             </div>
-
-            <div class="dashboard-box small"></div>
           </div>
         </div>
 
-        <div class="floating-card fc-1">UI/UX حرفه‌ای</div>
-        <div class="floating-card fc-2">سرعت بالا</div>
-        <div class="floating-card fc-3">سئو فرندلی</div>
+        <div class="float-tag tag-1">UI/UX مدرن</div>
+        <div class="float-tag tag-2">سرعت بالا</div>
+        <div class="float-tag tag-3">سئو فرندلی</div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="services section" id="services">
+  <section class="section" id="services">
     <div class="container">
-      <div class="section-title">
+      <div class="section-head">
         <span>خدمات ما</span>
-        <h2>همه‌چیز برای ساخت یک وب‌سایت حرفه‌ای</h2>
+        <h2>راهکارهایی برای رشد واقعی کسب‌وکار شما</h2>
         <p>
-          راهکارهایی که فقط ظاهر خوب ندارند، بلکه برای برندینگ، فروش و رشد شما طراحی شده‌اند.
+          خدماتی که فقط ظاهر سایت را زیبا نمی‌کنند، بلکه برای برندسازی،
+          فروش و اعتمادسازی طراحی شده‌اند.
         </p>
       </div>
 
-      <div class="services-grid">
-        <div class="service-card highlighted">
-          <div class="icon">💻</div>
-          <h3>طراحی سایت</h3>
-          <p>
-            طراحی سایت شرکتی، فروشگاهی و شخصی با ظاهر حرفه‌ای و ساختار مدرن.
-          </p>
-        </div>
+      <div class="service-grid">
+        <article class="service-card featured">
+          <div class="service-icon">💻</div>
+          <h3>طراحی سایت حرفه‌ای</h3>
+          <p>طراحی سایت شرکتی، فروشگاهی و شخصی با ساختار مدرن و ظاهر پریمیوم.</p>
+          <a href="#">بیشتر بدانید</a>
+        </article>
 
-        <div class="service-card">
-          <div class="icon">🚀</div>
-          <h3>بهینه‌سازی و سئو</h3>
-          <p>
-            افزایش سرعت، ساختار بهتر صفحات و آماده‌سازی سایت برای دیده‌شدن در گوگل.
-          </p>
-        </div>
+        <article class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>بهینه‌سازی سرعت</h3>
+          <p>بهبود عملکرد سایت برای تجربه کاربری بهتر و افزایش رضایت بازدیدکننده.</p>
+          <a href="#">بیشتر بدانید</a>
+        </article>
 
-        <div class="service-card">
-          <div class="icon">📈</div>
+        <article class="service-card">
+          <div class="service-icon">📈</div>
           <h3>مشاوره دیجیتال</h3>
-          <p>
-            تحلیل کسب‌وکار و انتخاب بهترین مسیر آنلاین برای رشد و جذب مشتری.
-          </p>
-        </div>
+          <p>تحلیل مسیر رشد آنلاین و انتخاب بهترین استراتژی برای توسعه برند شما.</p>
+          <a href="#">بیشتر بدانید</a>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Portfolio -->
-  <section class="portfolio section" id="portfolio">
+  <section class="section" id="portfolio">
     <div class="container">
-      <div class="section-title">
+      <div class="section-head">
         <span>نمونه‌کارها</span>
-        <h2>طراحی‌هایی با ظاهر واقعی و حرفه‌ای</h2>
+        <h2>طراحی‌هایی تمیز، مدرن و حرفه‌ای</h2>
       </div>
 
       <div class="portfolio-grid">
-        <div class="portfolio-card">
-          <div class="portfolio-overlay">
-            <h3>سایت شرکتی</h3>
-            <p>معرفی خدمات و برندینگ حرفه‌ای</p>
+        <div class="portfolio-item large">
+          <div class="portfolio-layer">
+            <h3>سایت شرکتی لوکس</h3>
+            <p>برندینگ حرفه‌ای و نمایش خدمات</p>
           </div>
         </div>
 
-        <div class="portfolio-card">
-          <div class="portfolio-overlay">
-            <h3>فروشگاه اینترنتی</h3>
-            <p>ساختار مناسب فروش و تجربه خرید بهتر</p>
+        <div class="portfolio-item">
+          <div class="portfolio-layer">
+            <h3>فروشگاه آنلاین</h3>
+            <p>ساختار مناسب فروش</p>
           </div>
         </div>
 
-        <div class="portfolio-card">
-          <div class="portfolio-overlay">
+        <div class="portfolio-item">
+          <div class="portfolio-layer">
             <h3>سایت شخصی</h3>
-            <p>رزومه، معرفی فردی و پرسونال برندینگ</p>
+            <p>پرسونال برندینگ</p>
           </div>
         </div>
       </div>
@@ -167,54 +184,52 @@
   </section>
 
   <!-- About -->
-  <section class="about section" id="about">
-    <div class="container about-grid">
+  <section class="section" id="about">
+    <div class="container about-layout">
       <div class="about-text">
         <span>درباره ما</span>
-        <h2>ما فقط سایت نمی‌سازیم، تصویر برند شما را می‌سازیم</h2>
+        <h2>ما وب‌سایت‌هایی می‌سازیم که حس حرفه‌ای بودن را منتقل کنند</h2>
         <p>
-          تمرکز ما روی ساخت وب‌سایت‌هایی است که از نظر ظاهر، تجربه کاربری،
-          ساختار محتوا و حس اعتماد، در سطح بالاتری از سایت‌های معمولی قرار بگیرند.
+          هدف ما طراحی سایت‌هایی است که علاوه بر ظاهر جذاب،
+          از نظر ساختار، تجربه کاربری و اعتبار برند نیز در سطح بالایی قرار داشته باشند.
         </p>
         <a href="#contact" class="btn btn-primary">شروع همکاری</a>
       </div>
 
-      <div class="about-box">
-        <div class="about-item">
+      <div class="about-cards">
+        <div class="about-card">
           <h3>طراحی مدرن</h3>
-          <p>ظاهر جذاب، تمیز و هماهنگ با برند</p>
+          <p>بر پایه استانداردهای جدید UI</p>
         </div>
-
-        <div class="about-item">
-          <h3>ساختار حرفه‌ای</h3>
-          <p>چیدمان درست برای هدایت کاربر</p>
-        </div>
-
-        <div class="about-item">
+        <div class="about-card">
           <h3>توسعه‌پذیر</h3>
-          <p>آماده برای افزودن امکانات جدید</p>
+          <p>قابل گسترش برای آینده کسب‌وکار</p>
+        </div>
+        <div class="about-card">
+          <h3>اعتمادساز</h3>
+          <p>طراحی شده برای جذب بهتر مشتری</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta section">
-    <div class="container cta-box">
-      <h2>
-        اگر می‌خواهی سایتت حرفه‌ای، مدرن و قابل اعتماد دیده شود،
-        از همین‌جا شروع کنیم
-      </h2>
-      <a href="#contact" class="btn btn-primary">درخواست مشاوره</a>
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>اگر می‌خواهی سایتت حرفه‌ای دیده شود، از همین‌جا شروع کنیم</h2>
+        <p>یک طراحی حرفه‌ای می‌تواند اولین نقطه اعتماد مشتری به برند تو باشد.</p>
+        <a href="#contact" class="btn btn-primary">درخواست مشاوره</a>
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="contact section" id="contact">
+  <section class="section" id="contact">
     <div class="container">
-      <div class="section-title">
+      <div class="section-head">
         <span>تماس با ما</span>
-        <h2>برای شروع پروژه با ما در ارتباط باش</h2>
+        <h2>برای شروع پروژه آماده‌ایم</h2>
       </div>
 
       <div class="contact-grid">
@@ -222,13 +237,11 @@
           <h3>شماره تماس</h3>
           <p>0912-000-0000</p>
         </div>
-
         <div class="contact-card">
           <h3>ایمیل</h3>
           <p>info@example.com</p>
         </div>
-
-        <div class="contact-card">
+        <div cla="contact-card">
           <h3>آدرس</h3>
           <p>تهران، ایران</p>
         </div>
@@ -236,12 +249,12 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© تمامی حقوق محفوظ است | NovaWeb</p>
+      <p>© تمامی حقوق محفوظ است | Nova Studio</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
