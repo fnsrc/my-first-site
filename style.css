@@ -152,4 +152,51 @@ body {
     justify-content: center;
   }
 }
+/* استایل کارت قابل کلیک */
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.clickable:hover {
+  transform: scale(1.05);
+  border: 1px solid #38bdf8;
+}
+
+/* استایل‌های پاپ‌آپ (Modal) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.6); 
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%; 
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
 
