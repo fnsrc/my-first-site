@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("servicesSlider");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
+  const servicesToggle = document.getElementById("servicesToggle");
+  const megaMenu = document.getElementById("megaMenu");
+  const servicesMenu = document.getElementById("servicesMenu");
 
-  if (slider && nextBtn && prevBtn) {
-    nextBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: -350, behavior: "smooth" });
+  if (servicesToggle && megaMenu && servicesMenu) {
+    servicesToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      megaMenu.classList.toggle("show");
     });
 
-    prevBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: 350, behavior: "smooth" });
+    document.addEventListener("click", (e) => {
+      if (!servicesMenu.contains(e.target)) {
+        megaMenu.classList.remove("show");
+      }
     });
   }
 });
