@@ -3,88 +3,288 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سایت من</title>
+  <title>ایران سایت | طراحی سایت حرفه‌ای</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- هدر -->
-  <header class="hero">
-    <nav class="navbar container">
-      <h1 class="logo">سایت من</h1>
-      <ul class="nav-links">
-        <li><a href="#about">درباره من</a></li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">ایران سایت</a>
 
-        <!-- منوی کشویی خدمات -->
-        <li class="dropdown">
-          <a href="#services">خدمات ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="web-design.html">طراحی سایت</a></li>
-            <li><a href="digital-consulting.html">مشاوره دیجیتال</a></li>
-            <li><a href="future-development.html">توسعه آینده</a></li>
-          </ul>
-        </li>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#hero">خانه</a></li>
+          <li><a href="#about">درباره ما</a></li>
 
-        <li><a href="#contact">تماس</a></li>
-      </ul>
-    </nav>
+          <!-- منوی حرفه‌ای خدمات -->
+          <li class="nav-item dropdown" id="servicesMenu">
+            <button class="dropdown-toggle" id="servicesToggle">
+              خدمات
+              <span class="arrow">▾</span>
+            </button>
 
-    <div class="hero-content container">
-      <h2>طراحی سایت و خدمات دیجیتال</h2>
-      <p>یک وب‌سایت حرفه‌ای، سریع و قابل توسعه برای معرفی خدمات شما</p>
-      <a class="btn" href="#services">مشاهده خدمات</a>
+            <div class="mega-menu" id="megaMenu">
+              <div class="mega-column">
+                <h4>طراحی سایت</h4>
+                <a href="web-design-corporate.html">طراحی سایت شرکتی</a>
+                <a href="web-design-store.html">طراحی سایت فروشگاهی</a>
+                <a href="web-design-personal.html">طراحی سایت شخصی</a>
+              </div>
+
+              <div class="mega-column">
+                <h4>خدمات دیجیتال</h4>
+                <a href="digital-consulting.html">مشاوره دیجیتال</a>
+                <a href="seo.html">خدمات سئو</a>
+                <a href="content.html">تولید محتوا</a>
+              </div>
+
+              <div class="mega-column">
+                <h4>توسعه و پشتیبانی</h4>
+                <a href="future-development.html">توسعه آینده</a>
+                <a href="support.html">پشتیبانی فنی</a>
+                <a href="optimization.html">بهینه‌سازی سایت</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#portfolio">نمونه‌کار</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- درباره -->
-  <section id="about" class="section">
-    <div class="container">
-      <h3>درباره ما</h3>
-      <p>
-        ما خدمات طراحی سایت، مشاوره دیجیتال و توسعه امکانات آینده را ارائه می‌دهیم.
-      </p>
-    </div>
-  </section>
+  <!-- هیرو -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">طراحی اختصاصی و توسعه‌پذیر</span>
+        <h1>طراحی سایت حرفه‌ای برای رشد واقعی کسب‌وکار شما</h1>
+        <p>
+          از طراحی سایت شرکتی و فروشگاهی تا مشاوره دیجیتال، سئو و توسعه اختصاصی،
+          همه‌چیز برای ساخت یک حضور آنلاین حرفه‌ای در کنار شماست.
+        </p>
 
-  <!-- خدمات اسکرولی -->
-  <section id="services" class="section alt">
-    <div class="container">
-      <h3>خدمات ما</h3>
-
-      <div class="services-slider-wrapper">
-        <button class="slider-btn" id="prevBtn">❯</button>
-
-        <div class="services-slider" id="servicesSlider">
-          <a class="service-card" href="web-design.html">
-            <h4>طراحی سایت</h4>
-            <p>طراحی صفحات مدرن، واکنش‌گرا و قابل توسعه.</p>
-          </a>
-
-          <a class="service-card" href="digital-consulting.html">
-            <h4>مشاوره دیجیتال</h4>
-            <p>کمک برای شروع حضور حرفه‌ای در فضای آنلاین.</p>
-          </a>
-
-          <a class="service-card" href="future-development.html">
-            <h4>توسعه آینده</h4>
-            <p>امکان اضافه‌کردن فرم، پنل، وبلاگ و امکانات بیشتر.</p>
-          </a>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">مشاهده خدمات</a>
+          <a href="#contact" class="btn btn-secondary">درخواست مشاوره</a>
         </div>
 
-        <button class="slider-btn" id="nextBtn">❮</button>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <strong>120+</strong>
+            <span>پروژه اجرا شده</span>
+          </div>
+          <div class="stat-box">
+            <strong>95%</strong>
+            <span>رضایت مشتریان</span>
+          </div>
+          <div class="stat-box">
+            <strong>24/7</strong>
+            <span>پشتیبانی</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="mockup-window">
+          <div class="mockup-top">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-sidebar"></div>
+            <div class="mockup-content">
+              <div class="line large"></div>
+              <div class="line"></div>
+              <div class="line short"></div>
+              <div class="cards-row">
+                <div class="mini-card"></div>
+                <div class="mini-card"></div>
+                <div class="mini-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- تماس -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h3>تماس با ما</h3>
-      <p>برای همکاری و مشاوره با ما در ارتباط باشید.</p>
+  <!-- درباره -->
+  <section class="about section" id="about">
+    <div class="container section-head">
+      <span class="section-tag">درباره ما</span>
+      <h2>راهکارهای مدرن برای برندها و کسب‌وکارهای حرفه‌ای</h2>
+      <p>
+        ما با تمرکز بر طراحی حرفه‌ای، سرعت، تجربه کاربری و توسعه‌پذیری،
+        وب‌سایت‌هایی می‌سازیم که فقط زیبا نیستند، بلکه برای رشد کسب‌وکار هم کار می‌کنند.
+      </p>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- خدمات -->
+  <section class="services section alt" id="services">
     <div class="container">
+      <div class="section-head">
+        <span class="section-tag">خدمات ما</span>
+        <h2>خدماتی که برای رشد دیجیتال شما طراحی شده‌اند</h2>
+      </div>
+
+      <div class="services-grid">
+        <a class="service-card featured" href="web-design-corporate.html">
+          <div class="service-icon">💻</div>
+          <h3>طراحی سایت</h3>
+          <p>
+            طراحی سایت اختصاصی، شرکتی، فروشگاهی و شخصی با ظاهری حرفه‌ای و ساختاری قابل توسعه.
+          </p>
+          <span class="service-link">مشاهده جزئیات ←</span>
+        </a>
+
+        <a class="service-card" href="digital-consulting.html">
+          <div class="service-icon">📈</div>
+          <h3>مشاوره دیجیتال</h3>
+          <p>
+            تحلیل مسیر رشد آنلاین، انتخاب استراتژی مناسب و برنامه‌ریزی برای توسعه برند.
+          </p>
+          <span class="service-link">مشاهده جزئیات ←</span>
+        </a>
+
+        <a class="service-card" href="future-development.html">
+          <div class="service-icon">⚙️</div>
+          <h3>توسعه آینده</h3>
+          <p>
+            افزودن امکانات جدید مانند فرم‌ها، پنل‌ها، سئو، بلاگ و قابلیت‌های اختصاصی.
+          </p>
+          <span class="service-link">مشاهده جزئیات ←</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- مزایا -->
+  <section class="features section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">چرا ما</span>
+        <h2>چرا این سایت حرفه‌ای‌تر به نظر می‌رسد؟</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <h3>طراحی مدرن</h3>
+          <p>استفاده از چیدمان حرفه‌ای، فاصله‌گذاری استاندارد و ظاهر نزدیک به سایت‌های واقعی.</p>
+        </div>
+        <div class="feature-box">
+          <h3>توسعه‌پذیری</h3>
+          <p>ساختار سایت به شکلی طراحی شده که بعداً به‌راحتی بتوان خدمات و صفحات جدید اضافه کرد.</p>
+        </div>
+        <div class="feature-box">
+          <h3>تجربه کاربری بهتر</h3>
+          <p>ناوبری واضح، بخش‌بندی حرفه‌ای و تمرکز روی راحتی کاربر در مشاهده خدمات.</p>
+        </div>
+        <div class="feature-box">
+          <h3>مناسب برندینگ</h3>
+          <p>برای معرفی حرفه‌ای خدمات، نمونه‌کارها و ساخت تصویر معتبر از کسب‌وکار شما مناسب است.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نمونه کار -->
+  <section class="portfolio section alt" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">نمونه‌کار</span>
+        <h2>نمونه‌ای از حوزه‌های کاری</h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <span>شرکتی</span>
+          <h3>وب‌سایت معرفی خدمات سازمانی</h3>
+          <p>برای برندها، شرکت‌ها و مجموعه‌های حرفه‌ای</p>
+        </div>
+        <div class="portfolio-card">
+          <span>فروشگاهی</span>
+          <h3>فروشگاه اینترنتی با قابلیت توسعه</h3>
+          <p>مناسب فروش آنلاین کالا و خدمات</p>
+        </div>
+        <div class="portfolio-card">
+          <span>شخصی</span>
+          <h3>وب‌سایت شخصی و رزومه حرفه‌ای</h3>
+          <p>برای معرفی فردی، نمونه‌کار و برند شخصی</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section">
+    <div class="container cta-box">
+      <div>
+        <span class="section-tag light">شروع همکاری</span>
+        <h2>برای ساخت یک وب‌سایت حرفه‌ای آماده‌ای؟</h2>
+        <p>اگر می‌خواهی سایتت ظاهر حرفه‌ای‌تر و ساختار واقعی‌تری داشته باشد، از همین‌جا شروع کنیم.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary light-btn">درخواست مشاوره</a>
+    </div>
+  </section>
+
+  <!-- تماس -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">تماس با ما</span>
+        <h2>راه‌های ارتباطی</h2>
+        <p>می‌توانی شماره تماس، ایمیل، آدرس یا فرم تماس را در این بخش قرار بدهی.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>شماره تماس</h3>
+          <p>۰۹۱۲-۰۰۰-۰۰۰۰</p>
+        </div>
+        <div class="contact-card">
+          <h3>ایمیل</h3>
+          <p>info@example.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>آدرس</h3>
+          <p>تهران، ایران</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ایران سایت</h3>
+        <p>طراحی سایت حرفه‌ای، مشاوره دیجیتال و توسعه خدمات آنلاین.</p>
+      </div>
+
+      <div>
+        <h4>دسترسی سریع</h4>
+        <ul>
+          <li><a href="#hero">خانه</a></li>
+          <li><a href="#services">خدمات</a></li>
+          <li><a href="#portfolio">نمونه‌کار</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>خدمات</h4>
+        <ul>
+          <li><a href="web-design-corporate.html">طراحی سایت</a></li>
+          <li><a href="digital-consulting.html">مشاوره دیجیتال</a></li>
+          <li><a href="future-development.html">توسعه آینده</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
       <p>© تمامی حقوق محفوظ است</p>
     </div>
   </footer>
